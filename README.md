@@ -27,8 +27,8 @@ Designed for:
 
 ## Screenshots
 
-![RUN](https://github.com/user-attachments/assets/1e498a52-8e15-48c9-9752-c4e84dfbf829)
 ![UI](https://github.com/user-attachments/assets/3b609966-f7d2-4ac5-8717-c00b994c6e59)
+![RUN](https://github.com/user-attachments/assets/1e498a52-8e15-48c9-9752-c4e84dfbf829)
 
 ---
 
@@ -36,8 +36,8 @@ Designed for:
 
 You can find ready-made scan reports in the [`example-reports/`](./example-reports/) folder:
 
-- [✔ example-scan-report-2025-07-19.pdf](./Example-Reports/example-scan-report-2025-07-19.pdf)
-- [✔ example-scan-report-2025-07-19.txt](./Example-Reports/example-scan-report-2025-07-19.txt)
+- [✔ example-scan-report-2025-07-22.pdf](./Example_Reports/example-scan-report-2025-07-22.pdf)
+- [✔ example-scan-report-2025-07-22.txt](./Example_Reports/example-scan-report-2025-07-22.txt)
 
 ---
 
