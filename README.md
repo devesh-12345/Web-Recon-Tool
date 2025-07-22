@@ -81,7 +81,7 @@ The following command-line tools must be available on your system's `PATH` for t
 - `whois`
 - `curl`
 - `nslookup`
-- `traceroute` or `tracert` for Windows operating systems (platform dependent)
+- `tracert` for Windows operating systems
 - `nmap` (optional, but recommended)
 
 ### Nmap Setup (Required for Port Scanning)
