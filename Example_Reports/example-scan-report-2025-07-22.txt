@@ -1,0 +1,167 @@
+================================================================================
+                         WEBSITE RECONNAISSANCE REPORT                          
+================================================================================
+Scan Time: 2025-07-22 16:39:41
+Scan URL: https://www.example.com.
+== Tools Used ==
+1. WHOIS
+2. NMAP
+3. CURL
+4. NSLOOKUP
+5. TRACEROUTE/TRACERT
+
+
+
+-----------------------------WhoIs Report-----------------------------
+Domain Name: EXAMPLE.COM
+Registrar: RESERVED-Internet Assigned Numbers Authority
+Registrar URL: http://res-dom.iana.org
+Reseller: None
+Whois Server: whois.iana.org
+Referral URL: None
+Update Date: Null
+Creation Date: [
+    "1995-08-14 04:00:00"
+]
+Expiration Date: [
+    "2025-08-13 04:00:00"
+]
+Name Servers: [
+    "A.IANA-SERVERS.NET",
+    "B.IANA-SERVERS.NET"
+]
+Status: [
+    "clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited",
+    "clientTransferProhibited https://icann.org/epp#clientTransferProhibited",
+    "clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"
+]
+Emails: null
+Dnssec: signedDelegation
+Name: None
+Org: None
+Address: None
+City: None
+State: None
+Registrant postal code: None
+Country: None
+-----------------------------End of WHOIS report-----------------------------
+
+
+
+
+-----------------------------Nmap Report-----------------------------
+Starting Nmap 7.97 ( https://nmap.org ) at 2025-07-22 16:39 +0530
+Nmap scan report for example.com (23.192.228.84)
+Host is up (0.30s latency).
+Other addresses for example.com (not scanned): 23.192.228.80 23.215.0.136 96.7.128.198 96.7.128.175 23.215.0.138 2600:1406:3a00:21::173e:2e65 2600:1406:3a00:21::173e:2e66 2600:1408:ec00:36::1736:7f24 2600:1406:bc00:53::b81e:94c8 2600:1406:bc00:53::b81e:94ce 2600:1408:ec00:36::1736:7f31
+rDNS record for 23.192.228.84: a23-192-228-84.deploy.static.akamaitechnologies.com
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     AkamaiGHost (Akamai's HTTP Acceleration/Mirror service)
+443/tcp open  ssl/http AkamaiGHost (Akamai's HTTP Acceleration/Mirror service)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 41.44 seconds
+-----------------------------End of Nmap Report-----------------------------
+
+
+
+
+-----------------------------CURL Report-----------------------------
+Status code : <Response [200]>
+Headers : {
+    "Accept-Ranges": "bytes",
+    "Content-Type": "text/html",
+    "ETag": "\"84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134\"",
+    "Last-Modified": "Mon, 13 Jan 2025 20:11:20 GMT",
+    "Vary": "Accept-Encoding",
+    "Content-Encoding": "gzip",
+    "Cache-Control": "max-age=1449",
+    "Date": "Tue, 22 Jul 2025 11:10:28 GMT",
+    "Alt-Svc": "h3=\":443\"; ma=93600,h3-29=\":443\"; ma=93600",
+    "Content-Length": "648",
+    "Connection": "keep-alive"
+}
+=======================================
+Reading HTML text from BeautifulSoap: 
+
+Page title: Example Domain
+
+Readable text: 
+Example Domain
+Example Domain
+This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.
+More information...
+=======================================
+-----------------------------End of CURL Report-----------------------------
+
+
+
+
+-----------------------------Nslookup Report-----------------------------
+Domain: example.com
+dns_server: UnKnown
+cname: None
+ipv4: [
+    "192.168.0.1",
+    "23.192.228.80",
+    "96.7.128.198",
+    "23.215.0.138",
+    "23.215.0.136",
+    "96.7.128.175",
+    "23.192.228.84"
+]
+ipv6: [
+    "2600:1406:3a00:21::173e:2e65",
+    "2600:1408:ec00:36::1736:7f31",
+    "2600:1406:3a00:21::173e:2e66",
+    "2600:1406:bc00:53::b81e:94ce",
+    "2600:1408:ec00:36::1736:7f24",
+    "2600:1406:bc00:53::b81e:94c8"
+]
+-----------------------------End of Nslookup Report-----------------------------
+
+
+
+
+-----------------------Network path tracing Report-----------------------
+Tracing route to example.com [23.215.0.136]
+over a maximum of 30 hops:
+
+  1     6 ms    <1 ms    <1 ms  192.168.0.1 
+  2     5 ms     1 ms     1 ms  10.50.51.174 
+  3     5 ms     2 ms     4 ms  10.50.51.17 
+  4     *        *        *     Request timed out.
+  5     *        *        *     Request timed out.
+  6    31 ms    33 ms    31 ms  172.29.251.34 
+  7     *        *        *     Request timed out.
+  8     *        *      245 ms  if-bundle-22-2.qcore2.cxr-chennai.as6453.net [180.87.37.114] 
+  9   236 ms     *      235 ms  if-bundle-34-2.qcore2.mlv-mumbai.as6453.net [209.58.105.228] 
+ 10     *        *        *     Request timed out.
+ 11     *        *        *     Request timed out.
+ 12     *        *      240 ms  if-bundle-2-2.qcore1.pye-paris.as6453.net [80.231.154.26] 
+ 13     *        *      242 ms  63.243.137.148 
+ 14   245 ms     *      250 ms  if-bundle-2-2.qcore1.aeq-ashburn.as6453.net [216.6.87.8] 
+ 15   243 ms   259 ms   235 ms  if-ae-21-2.tcore2.a56-atlanta.as6453.net [216.6.87.39] 
+ 16   244 ms   259 ms   242 ms  if-ae-34-2.tcore2.a56-atlanta.as6453.net [64.86.9.16] 
+ 17   330 ms   388 ms   239 ms  64.86.9.101 
+ 18   239 ms   246 ms   238 ms  ae5.r22.atl01.mag.netarch.akamai.com [23.192.0.100] 
+ 19   236 ms   238 ms   236 ms  ae1.r21.atl01.icn.netarch.akamai.com [23.192.0.67] 
+ 20   240 ms   266 ms   254 ms  ae24.r01.iad02.icn.netarch.akamai.com [23.32.62.69] 
+ 21   242 ms   239 ms   242 ms  ae5.r21.iad04.mag.netarch.akamai.com [23.209.165.94] 
+ 22   244 ms   236 ms   251 ms  ae22.r01.iad02.ien.netarch.akamai.com [23.209.165.111] 
+ 23   287 ms   264 ms   293 ms  ae33.r03.border01.iad04.fab.netarch.akamai.com [23.209.165.71] 
+ 24   247 ms   243 ms   247 ms  lo1.r02.stem01.iad04.fab.netarch.akamai.com [23.44.169.21] 
+ 25   288 ms   299 ms  1413 ms  lo1.r01.spine02.iad04.fab.netarch.akamai.com [23.44.169.8] 
+ 26   258 ms   248 ms   235 ms  lo1.r02.leaf01.iad04.fab.netarch.akamai.com [23.44.169.28] 
+ 27   249 ms   237 ms   236 ms  vlan100.r19.tor01.iad04.fab.netarch.akamai.com [23.213.246.129] 
+ 28   238 ms   249 ms   237 ms  a23-215-0-136.deploy.static.akamaitechnologies.com [23.215.0.136] 
+
+Trace complete.
+-----------------------End of Network path tracing Report-----------------------
+
+
+
+
+END OF REPORT
