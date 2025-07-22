@@ -44,7 +44,7 @@ You can find ready-made scan reports in the [`example-reports/`](./example-repor
 ## Installation
 
 ### Windows
-1. Download the latest release `.exe` from [Releases](link to .exe)
+1. Download the latest release `.exe` from [Releases](https://github.com/devesh-12345/Web-Recon-Tool/releases/tag/v1.0.0)
 2. Run it directly — no Python required
 3. WHOIS and other system tools work out-of-the-box
 
